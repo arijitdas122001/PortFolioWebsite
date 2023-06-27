@@ -1,0 +1,86 @@
+.topbar{
+    width: 100%;
+    height: 70px;
+    background-color:#ebc6cd;
+    color: darkblue;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    overflow-y: hidden;
+
+    &.active{
+        overflow-y: hidden;
+        .hamburger span{
+        &:first-child {
+            background-color: darkblue;
+            transform: rotate(45deg);
+          }
+          &:nth-child(2) {
+            opacity: 0;
+          }
+          &:last-child {
+            background-color: darkblue;
+            transform: rotate(-45deg);
+          }
+        }
+    }
+}
+#topbar{
+.wrapper{
+    padding: 10px 3px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.left{
+    display: flex;
+    align-items: center;
+
+}
+.left img{
+    width: 14%;
+}
+.leftsub{
+    display: flex;
+    align-items: center;
+    margin-left: 12px;
+    
+    @media only screen and (max-width: 425px){
+     display: none;
+    }
+    >*{
+        margin-left: 10px;
+        font-size: 18px;
+       font-weight: 600;
+    }
+}
+.right {
+    height: 44px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .hamburger {
+      width: 32px;
+      height: 25px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      cursor: pointer;
+    }
+  }
+  .right:hover{
+    background-color: #e8e1e1;
+    border-radius: 19px;
+  }
+  .hamburger span{
+    width: 100%;
+    height: 2px;
+    background-color: darkblue;
+    transform-origin: left;
+    transition: all 1s smooth;
+  }
+  .hamburger span:hover{
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,114 @@
+.samplesection{
+    background-color:rgb(157 142 145);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.samplesection h1{
+  position: absolute;
+  top:0;
+  overflow-y:hidden;
+  color: darkblue;
+  font-weight: 100;
+}
+.Arrow{
+  height: 40px;
+  position: absolute;
+  cursor: pointer;
+  &.aleft{
+    left:50px;
+    transform: rotateY(180deg);
+  }
+  &.aright{
+    right:150px;
+  }
+}
+#samples{
+  .slider{
+    display: flex;
+    height: 400px;
+    position: absolute;
+    left:0;  
+    transition: all 2s ease;
+  }
+  .scontainer{
+    width: 100vw;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ .sitem {
+    width: 700px;
+    height: 100%;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media only screen and (max-width: 425px){
+      height: 250px
+    }
+ }
+ .sleft{
+    flex: 6;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #faa2b2;
+ }
+ .sright{
+    flex: 4;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ddc8a3
+ }
+ .rightbtns{
+   padding: 11px;
+   margin: 47px;
+   border-radius: 18px;
+   background-color: crimson;
+   color: white;
+   outline: none;
+   border: 0;
+   @media only screen and (max-width: 425px){
+    margin: 30px;
+    padding: 4px;
+  }
+   }
+   .rightbtns:hover{
+     background-color: grey;
+     color: black;
+   }
+ .leftcontainer{
+   height: 100%;
+   width: 90%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+ }
+ .imagecontainer{
+   width: 70%  ;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   overflow: hidden;
+ }
+ .leftcontainer h4{
+   overflow: hidden;
+   color: #f70404;
+   font-weight: 800;
+
+ }
+ .leftcontainer p{
+   overflow: hidden;
+   width: 80%;
+   display: flex;
+   margin-left: 12px;
+ }
+}
