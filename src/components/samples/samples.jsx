@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import './samples.css'
-import blogweb from '../../assets/blogweb.jpg'
+import ecommerce from '../../assets/ecommerce.webp'
 import portlogo from '../../assets/portlogo.png'
-import notebook from '../../assets/notebook.jpg'
+import blogweb from '../../assets/blogweb.jpg'
 import arrow from '../../assets/arrow.png'
 const samples = () => {
     // eslint-disable-next-line
@@ -10,24 +10,30 @@ const samples = () => {
     const items=[
       {
       id: "1",
-      icon: blogweb,
-      title: "Blog Website",
+      icon: ecommerce,
+      title: "Ecommerce",
       desc:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
+        "Online Fashion Website Made with MERN Stack with many Feaures like shopping,adding to cart,bill payment,sign up,log-in ,logout",
+      link:'https://woocommerce-khaki.vercel.app/',
+      git:'https://github.com/arijitdas122001/woocommerce'
     },
     {
       id: "2",
       icon: portlogo,
       title: "PortFolio Website",
       desc:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "Own ProtFolio Website Made with ReactJs where one can find all details about me with a taste of good Ui and smooth experience",
+      link:'https://my-protfolio-psi.vercel.app/',
+      git:'https://github.com/arijitdas122001/portfolioWebsite'
     },
     {
       id: "3",
-      icon: notebook,
-      title: "Notes Taking Site",
+      icon: blogweb,
+      title: "Blog WebSite",
       desc:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "Online Blog Website Made with HTML,CSS,JS which is a realtime blog writring website where u can share u thoughts thorugh blogs and it is intregrated with DataBase(MongoDb) by which Blogs are updated Realtime,Usercan also Log-in and Log-out",
+      link:'#',
+      git:'https://github.com/arijitdas122001/Blog-Website'
     },
   ];
   const handleclick=(curarrow)=>{
@@ -48,12 +54,12 @@ const samples = () => {
               <img src={ele.icon} alt="..." />
               </div>
               <h4>{ele.title}</h4>
-              <p>{ele.desc}</p>
+              <p className='para'>{ele.desc}</p>
             </div>
           </div>
           <div className="sright">
-            <button className='rightbtns'>Check Out The Website</button>
-            <button className='rightbtns'>Check Out In GitHub</button>
+            <button className='rightbtns'><a href={ele.link} target='blank'>Check Out The Website</a></button>
+            <button className='rightbtns'><a href={ele.git} target='blank'>Check Out GitHub</a></button>
           </div>
           </div>
         </div>

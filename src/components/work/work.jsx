@@ -12,28 +12,28 @@ const work = () => {
       <div className="card" style={{width: "18rem" ,height:"20rem",}}>
   <img src={p1} className="card-img-top" alt="..."/>
   <div className="card-body">
-    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <p className="card-text">Visit My LeetCode Profie</p>
   </div>
-  <a href="https://github.com/" target='_blank' rel="noreferrer"><button>Visit Here</button></a>
+  <a href="https://leetcode.com/arijit__12/" target='_blank' rel="noreferrer"><button>Visit Here</button></a>
 </div>
       <div className="card" style={{width: "18rem" ,height:"20rem"}}>
   <img src={p2} className="card-img-top" alt="..." style={{height:"10rem"}}/>
   <div className="card-body">
-    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <p className="card-text">Visit My GeeksForGeeks Profile</p>
   </div>
-  <a href="https://github.com/" target='_blank' rel="noreferrer"><button>Visit Here</button></a>
+  <a href="https://auth.geeksforgeeks.org/user/aribwnlvpgbwn/?utm_source=geeksforgeeks&utm_medium=my_profile&utm_campaign=auth_user" target='_blank' rel="noreferrer"><button>Visit Here</button></a>
 </div>
       <div className="card" style={{width: "18rem" ,height:"20rem"}}>
   <img src={p3} className="card-img-top" alt="..."/>
   <div className="card-body">
-    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <p className="card-text">Visit My LinkedIn Profile</p>
   </div>
-  <a href="https://github.com/" target='_blank' rel="noreferrer"><button>Visit Here</button></a>
+  <a href="https://www.linkedin.com/in/arijit-das-3a5944208/" target='_blank' rel="noreferrer"><button>Visit Here</button></a>
 </div>
       <div className="card" style={{width: "18rem" ,height:"20rem"}}>
   <img src={p4} className="card-img-top" alt="..." style={{height:"10rem"}}/>
   <div className="card-body">
-    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <p className="card-text">Visit My GitHub Profile</p>
   </div>
   <a href="https://github.com/" target='_blank' rel="noreferrer"><button>Visit Here</button></a>
 </div>
