@@ -16,7 +16,7 @@ const samples = () => {
         "Online Fashion Website Made with MERN Stack with many Feaures like shopping,adding to cart,bill payment,sign up,log-in ,logout",
       link:'https://woocommerce-khaki.vercel.app/',
       git:'https://github.com/arijitdas122001/woocommerce',
-      tags:['ReactJs','ExpressJs','NodeJs','MongoDB','Javascript','Redux','Stripe-payments'],
+      tags:['ReactJs','ExpressJs','NodeJs','MongoDB','Javascript','Redux','Stripe-payments','Html','css'],
     },
     {
       id: "2",
@@ -26,7 +26,7 @@ const samples = () => {
         "Simplifying Hotel Bookings for Travel Enthusiasts Excited to showcase my latest project, TravelPedia, a user-friendly full-stack travel booking website built with the 𝐌𝐄𝐑𝐍 stack",
       link:'https://react-travelpedia.vercel.app/',
       git:'https://github.com/arijitdas122001/React-Travelpedia',
-      tags:['ReactJs','ExpressJs','NodeJs','MongoDB','Javascript','Redux','Razorpay-payments'],
+      tags:['ReactJs','ExpressJs','NodeJs','MongoDB','Javascript','Redux','Razorpay-payments','Html','css'],
     },
     {
       id: "3",
@@ -36,7 +36,7 @@ const samples = () => {
         "I'm excited to introduce my new project, a dynamic Blogging app built with Next.js. This platform empowers users to create, interact with, and explore a wide variety of blogs",
       link:'https://blogswell.vercel.app/',
       git:'https://github.com/arijitdas122001/NextJsBlog',
-      tags:['NextJs','MongoDB','Zod','Clodinary','Typescript','Next-Auth'], 
+      tags:['NextJs','MongoDB','Zod','Clodinary','Typescript','Next-Auth','Tailwind-css'], 
     },
   ];
   const handleclick=(curarrow)=>{
