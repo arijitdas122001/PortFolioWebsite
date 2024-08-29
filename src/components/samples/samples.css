@@ -62,20 +62,48 @@
  .sright{
     flex: 4;
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: flex;  
     flex-direction: column;
-    background-color: #ddc8a3
+    background-color: #ddc8a3;
+ }
+ .sright-nested1{
+  display:flex;
+  flex-direction: column;
+  flex: 1;
+  /* background-color: red; */
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 9px;
+  overflow: hidden;
+ }
+ .sright-nested2{
+  flex: 1;
+  /* background-color: red; */
+  display: flex; 
+  flex-wrap: wrap;
+  padding:10px;
+  gap: 7px;
+ }
+ .sright-tags{
+  background-color: rgb(179, 179, 236);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+  overflow: hidden;
+  font-size: small;
+  border-radius: 10px;
+  padding:10px;
  }
  .rightbtns{
-   padding: 11px;
-   margin: 47px;
-   border-radius: 18px;
-   background-color: crimson;
+    overflow: hidden;
+    border-radius: 7px;
+    padding: 6px;
+   /* background-color: crimson; */
    color: white;
    outline: none;
-   border: 0;
+   border:2px solid black;
    @media only screen and (max-width: 425px){
     margin: 30px;
     padding: 4px;
@@ -99,7 +127,7 @@
    align-items: center;
  }
  .imagecontainer{
-   width: 70%  ;
+   width: 30%  ;
    display: flex;
    align-items: center;
    justify-content: center;

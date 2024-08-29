@@ -28,7 +28,7 @@ const topbar = (props) => {
             href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
           />
           <span class="material-symbols-outlined">file_open</span>
-          <span><a href="https://drive.google.com/file/d/1jpvt_Wo1SlLnXpStZviKcBeq8l377b5-/view?usp=sharing" target="blank">My Resume</a></span>
+          <span><a href="https://drive.google.com/file/d/1z8T9BP0r92NzrE7FjIKL_T2uEy06SoYA/view?usp=sharing" target="blank">My Resume</a></span>
         </div>
         <div className="right">
           <div

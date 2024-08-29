@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import './samples.css'
 import ecommerce from '../../assets/ecommerce.webp'
-import portlogo from '../../assets/portlogo.png'
 import blogweb from '../../assets/blogweb.jpg'
+import travel from '../../assets/travel.avif'
 import arrow from '../../assets/arrow.png'
 const samples = () => {
     // eslint-disable-next-line
@@ -15,25 +15,28 @@ const samples = () => {
       desc:
         "Online Fashion Website Made with MERN Stack with many Feaures like shopping,adding to cart,bill payment,sign up,log-in ,logout",
       link:'https://woocommerce-khaki.vercel.app/',
-      git:'https://github.com/arijitdas122001/woocommerce'
+      git:'https://github.com/arijitdas122001/woocommerce',
+      tags:['ReactJs','ExpressJs','NodeJs','MongoDB','Javascript','Redux','Stripe-payments'],
     },
     {
       id: "2",
-      icon: portlogo,
-      title: "PortFolio Website",
+      icon: travel,
+      title: "TravelPedia",
       desc:
-        "Own ProtFolio Website Made with ReactJs where one can find all details about me with a taste of good Ui and smooth experience",
-      link:'https://my-protfolio-psi.vercel.app/',
-      git:'https://github.com/arijitdas122001/portfolioWebsite'
+        "Simplifying Hotel Bookings for Travel Enthusiasts Excited to showcase my latest project, TravelPedia, a user-friendly full-stack travel booking website built with the 𝐌𝐄𝐑𝐍 stack",
+      link:'https://react-travelpedia.vercel.app/',
+      git:'https://github.com/arijitdas122001/React-Travelpedia',
+      tags:['ReactJs','ExpressJs','NodeJs','MongoDB','Javascript','Redux','Razorpay-payments'],
     },
     {
       id: "3",
-      icon: blogweb,
-      title: "Blog WebSite",
+      icon:blogweb,
+      title: "Blog App",
       desc:
-        "Online Blog Website Made with HTML,CSS,JS which is a realtime blog writring website where u can share u thoughts thorugh blogs and it is intregrated with DataBase(MongoDb) by which Blogs are updated Realtime,Usercan also Log-in and Log-out",
-      link:'#',
-      git:'https://github.com/arijitdas122001/Blog-Website'
+        "I'm excited to introduce my new project, a dynamic Blogging app built with Next.js. This platform empowers users to create, interact with, and explore a wide variety of blogs",
+      link:'https://blogswell.vercel.app/',
+      git:'https://github.com/arijitdas122001/NextJsBlog',
+      tags:['NextJs','MongoDB','Zod','Clodinary','Typescript','Next-Auth'], 
     },
   ];
   const handleclick=(curarrow)=>{
@@ -58,8 +61,15 @@ const samples = () => {
             </div>
           </div>
           <div className="sright">
+            <div className="sright-nested1">
             <button className='rightbtns'><a href={ele.link} target='blank'>Check Out The Website</a></button>
             <button className='rightbtns'><a href={ele.git} target='blank'>Check Out GitHub</a></button>
+            </div>
+            <div className="sright-nested2">
+              {ele.tags.map((ele)=>(
+              <div className="sright-tags">{ele}</div>
+            ))}
+            </div>
           </div>
           </div>
         </div>
